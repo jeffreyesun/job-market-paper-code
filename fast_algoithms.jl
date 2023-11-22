@@ -1,10 +1,10 @@
 
-##################################################################################################
-# Compute discrete choice quickly by reducing the entire thing to a single matrix multiplication #
-##################################################################################################
+##############################################################################################################
+# Compute discrete choice (migration) quickly by reducing the entire thing to a single matrix multiplication #
+##############################################################################################################
 
 """
-    Compute V_move in terms of k_postmove.
+    Iterate value function backwards through migration stage.
 
 Because k_postmove is equal regardless of the destination, we can compute
 V_move in terms of k_postmove by integrating over all possible destinations.
@@ -35,7 +35,7 @@ function get_V_move_k_postmove(V_postmove, prealloc, params)
 end
 
 """
-    Compute migration flows.
+    Simulate state distribution forward through migration stage.
 """
 function get_λ_postmove(λ_move_k_postmove, sim_prealloc)
     (;eψV_move_k_postmove_tilde, eψFu_inv, eψV_postmove_tilde, λ_postmove, origin_weights) = sim_prealloc
@@ -52,9 +52,9 @@ function get_λ_postmove(λ_move_k_postmove, sim_prealloc)
 end
 
 
-########################################################################################################################################
-# Compute optimal consumption-savings decision quickly by computing whole wealth distribution (conditional on everything else) at once #
-########################################################################################################################################
+############################################################################################################
+# Compute optimal consumption-savings decision quickly by solving for entire slice of distribution at once #
+############################################################################################################
 
 """
     For each pre-utility state, maximize utility + post-utility value,
