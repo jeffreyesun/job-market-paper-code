@@ -1,0 +1,2 @@
+County-county distances: Census Bureau via NBER, https://www.nber.org/research/data/county-distance-database
+County-county gross migration flows: Census Bureau, https://www.census.gov/topics/population/migration/guidance/county-to-county-migration-flows.html

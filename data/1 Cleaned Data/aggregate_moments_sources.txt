@@ -1,0 +1,22 @@
+2001-2022 SCF:
+- r (see SCF folder)
+
+2022 SCF:
+- wealth distribution
+- old relative mean wealth (age 65-74)/(age 55-64) = 1794.6/1566.9 = 1.1453
+- overall wealth mean and quantiles, and young mean wealth (wealth_dist.csv)
+- income process age shifters
+
+Zillow:
+- price-to-rent ratio (see Zillow folder)
+
+IPUMS (see IPUMS folder):
+- decadal moving share (using MOVEDIN among people aged 30-79)
+- rent-to-earnings (using RENTGRS and INCWAGE among household heads aged 30-79 with positive rent and wage)
+
+Kaplan, Mitman, Violante:
+- decadalized income process
+- They have rho=0.97, sigma=0.2. I have rho^ann = rho^10, sigma^ann = sqrt( sigma^2 * (1-rho^20)/(1-rho^2) )
+
+Census Bureau:
+- Median county-to-county move over 20 miles within the contiguous United States (see Census Bureau folder)

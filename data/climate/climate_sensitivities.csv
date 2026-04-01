@@ -1,0 +1,5 @@
+parameter,climate_driver,sensitivity
+A,HDD,-0.0000081
+A,CDD,-0.0000456
+alpha,HDD,-0.0000338
+alpha,CDD,-0.0000675

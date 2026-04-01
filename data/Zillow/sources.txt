@@ -1,0 +1,11 @@
+https://www.zillow.com/research/data/
+
+https://www.zillow.com/rental-manager/market-trends/united-states/?bedrooms=2
+(accessed Jan 19, 2026)
+
+2 bedroom:
+
+avg price: 270486
+avg rent: 1780
+annual ratio: 12.66
+decadal ratio: 1.266
