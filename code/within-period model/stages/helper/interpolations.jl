@@ -35,7 +35,7 @@ function reinterpolate!(y2::AbstractVector, y1::AbstractVector, x1::AbstractVect
         y1_j1 = y1[j+1]
 
         if y1_j == -Inf || y1_j1 == -Inf
-            y2[i] = extrap == :clip ? y1[1] : -Inf32
+            y2[i] = extrap == :clip ? max(y1_j, y1_j1) : -Inf32
         else
             slope = (y1[j + 1] - y1_j) / (x1_j1 - x1_j)
             y2[i] = slope * (x2_i - x1_j) + y1_j
